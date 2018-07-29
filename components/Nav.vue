@@ -14,23 +14,28 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
+@import '~/assets/styles/_variables.scss';
 .nav {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 100;
+  overflow: hidden;
 }
 .bar {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   background: #222;
 }
 
 .logo {
   overflow: hidden;
-  width: 15vw;
+  min-width: 200px;
+  width: 16vw;
+  max-width: 300px;
   padding: 10px 20px;
 }
 
@@ -39,10 +44,15 @@ export default {
 }
 
 .list {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  display: none;
+  @media #{$desktop--medium} {
+    display: flex;
+    width: 65%;
+    max-width: 700px;
+    min-width: 500px;
+  }
 }
 
 .link {

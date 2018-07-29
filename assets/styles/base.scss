@@ -1,8 +1,13 @@
-body {
-  background: white;
-  font-family: 'Raleway', sans-serif;
+:root {
+  font-size: 14px;
+  body {
+    background: white;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
-
 .center-column {
   max-width: 100%;
   margin: 0 auto;
@@ -14,10 +19,28 @@ body {
   justify-content: center;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
 .horizontal-align {
   align-items: center;
 }
 
 .item {
 }
+.pair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.responsive-font {
+  font-size: 1rem;
+  @media #{$phone--large} {
+    font-size: 1.25rem;
+  }
+  @media #{$desktop--medium} {
+    font-size: 1.5rem;
+  }
+}

@@ -2,10 +2,12 @@
 .banner
   .center-column
     .container.horizontal-align
-      img(:src="image")
-      .item
+      img.img-contain(:src="image")
+      .item.responsive-font
         .price
-          .terms PRE-LAUNCH SALE ON NOW
+          .terms PRE-LAUNCH SALE 
+            br 
+            | ON NOW
           .strikeout $199
           .new-price $139
           .order-button Order Now
@@ -18,10 +20,19 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.banner {
+  background: linear-gradient(rgb(25,25,40), rgb(15,15,20));
+  color: white;
+  padding: 2em;
+  overflow: hidden;
+}
+.img-contain {
+  max-width: 100%;
+}
 .price {
   padding: 10px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5em;
   width: 350px;
 }
