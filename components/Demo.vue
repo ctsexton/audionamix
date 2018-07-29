@@ -37,5 +37,11 @@ export default {
   padding: 1em;
   font-size: 1em;
   max-width: 700px;
+  @media #{$desktop--large} {
+    max-width: 600px;
+  }
+  @media #{$desktop--huge} {
+    max-width: 650px;
+  }
 }
 </style>

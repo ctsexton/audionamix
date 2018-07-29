@@ -2,7 +2,7 @@
 .main
   Nav(:links="contents.navigation.links" :logo_path="contents.navigation.logo")
   Banner(:image="contents.product.source")
-  Demo(:title="'Intelligent Speed & Melody Extraction'" :summary="contents.video.caption" :video="contents.video.source")
+  Demo(:title="contents.video.title" :summary="contents.video.caption" :video="contents.video.source")
   Quote(:author="contents.quote.author" :text="contents.quote.text")
   .grey-banner
     ProductDetails(:summary="contents.product.description" :features="contents.product.features" :requirements="contents.product.requirements")
@@ -42,7 +42,7 @@ export default {
 }
 .grey-banner {
   background: #aaa;
-  padding: 2em;
+  padding: 1em;
 }
 </style>
 

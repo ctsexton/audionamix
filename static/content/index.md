@@ -37,6 +37,7 @@ video:
   width: 720
   height: 405
   source: https://www.youtube.com/embed/PUwrs_AsLJ0
+  title: Intelligent Speech & Melody Extraction
   caption:  Unlike traditional denoisers that learn and remove noise, IDC works by separating and preserving speech by reducing background interference without compromising the integrity of the dialogue. IDC can succeed where other tools fail, such as with wind, roomtone and complex, varying background noise like birds, insects and extraneous car and plane sounds.
 quote:
   text: IDC is a very straightforward and powerful tool to easily remove background noise. Pretty handy to quickly clean your rough recordings. Give it a try, you won’t be disappointed!
