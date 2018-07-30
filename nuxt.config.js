@@ -30,6 +30,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: [
+    { src: '~/plugins/font-awesome' }
+  ],
   build: {
     /*
     ** Run ESLint on save

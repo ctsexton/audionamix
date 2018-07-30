@@ -31,6 +31,7 @@ export default {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 1em;
   &--title {
     font-weight: bold;
     padding: 0.5em 0;
