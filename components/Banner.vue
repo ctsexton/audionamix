@@ -2,7 +2,8 @@
 .banner
   .center-column
     .container.horizontal-align
-      img.img-contain(:src="image")
+      .max-image
+        img.img-contain(:src="image")
       .item.responsive-font
         .price
           .terms PRE-LAUNCH SALE 
@@ -26,8 +27,11 @@ export default {
   padding: 2em;
   overflow: hidden;
 }
-.img-contain {
+.max-image {
   max-width: 650px;
+}
+.img-contain {
+  max-width: 100%;
 }
 .price {
   padding: 1em 0;
