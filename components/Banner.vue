@@ -27,10 +27,11 @@ export default {
   overflow: hidden;
 }
 .img-contain {
-  max-width: 100%;
+  max-width: 650px;
 }
 .price {
-  padding: 10px;
+  padding: 1em 0;
+  overflow: hidden;
   text-align: center;
   font-size: 1em;
   line-height: 1.5em;

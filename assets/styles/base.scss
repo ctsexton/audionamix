@@ -12,13 +12,14 @@
   max-width: 100%;
   margin: 0 auto;
 }
-
+.clickable {
+  cursor: pointer;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .flex {
   display: flex;
   flex-direction: row;
@@ -26,15 +27,11 @@
 .horizontal-align {
   align-items: center;
 }
-
-.item {
-}
 .pair {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .responsive-font {
   font-size: 1rem;
   @media #{$phone--large} {

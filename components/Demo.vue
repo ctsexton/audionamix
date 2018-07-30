@@ -4,16 +4,19 @@
     Youtube(:source="video" :width="720" :height="405")
     .copy
       h1.title {{ title }}
-      .summary(v-for="dotPoint in summary") &#x2bc8 {{ dotPoint }}
+      .summary(v-for="dotPoint in summary")
+        DotPoint(:image="'arrow.svg'" :text="dotPoint")
       .flex.horizontal-align.audio-sample
-        img(src="volume.svg" width="50px") 
-        .audio-caption Listen to IDC
+        img.clickable(src="volume.svg" width="50px") 
+        .audio-caption IDC: Speech Enhancement Comparison
 </template>
 <script>
 import Youtube from '~/components/Youtube';
+import DotPoint from '~/components/DotPoint';
 export default {
   components: {
-    Youtube
+    Youtube,
+    DotPoint
   },
   props: {
     title: String,
