@@ -16,12 +16,12 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/styles/_variables.scss';
 .quote-container {
-  padding: 1em;
+  padding: 0 1em;
 }
 .quote-frame {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   padding: 2em 2em;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
