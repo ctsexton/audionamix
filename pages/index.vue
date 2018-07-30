@@ -6,7 +6,7 @@
   Quote(:author="contents.quote.author" :text="contents.quote.text")
   .grey-banner
     ProductDetails(:summary="contents.product.description" :features="contents.product.features" :requirements="contents.product.requirements")
-  Footer
+  //Footer
 </template>
 
 <script>
@@ -41,7 +41,7 @@ export default {
   padding: 0;
 }
 .grey-banner {
-  background: #aaa;
+  background: #eeeeee;
   padding: 1em;
 }
 </style>

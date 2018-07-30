@@ -5,15 +5,19 @@
   .pair
     .half
       h2.product-details--title Features
-      ul
-        li(v-for="feature in features") {{ feature }}
+      .summary(v-for="feature in features")
+        DotPoint(:image="'arrow.svg'" :text="feature")
     .half
       h2.product-details--title Requirements
-      ul
-        li(v-for="req in requirements") {{ req }}
+      .summary(v-for="req in requirements")
+        DotPoint(:image="'arrow.svg'" :text="req")
 </template>
 <script>
+import DotPoint from '~/components/DotPoint';
 export default {
+  components: {
+    DotPoint
+  },
   props: {
     summary: Array,
     features: Array,
@@ -40,5 +44,8 @@ export default {
   @media #{$desktop--medium} {
     width: 50%;
   }
+}
+.summary {
+  padding: 0.25em 0;
 }
 </style>
