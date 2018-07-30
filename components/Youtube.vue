@@ -18,10 +18,10 @@ export default {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 720px;
+	width: 650px;
 	margin: 0;
 	@media screen and (min-width: 751px) {
-		width: 720px;
+		width: 650px;
 	}
 }
 .media-container iframe {
