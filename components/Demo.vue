@@ -20,7 +20,7 @@ export default {
   },
   props: {
     title: String,
-    summary: String,
+    summary: Array,
     video: String
   }
 }

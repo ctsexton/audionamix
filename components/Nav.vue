@@ -24,7 +24,6 @@ export default {
   computed: {
     menuHeight: function () {
       let height = this.links.length * 2.5 + 2;
-      console.log(height);
       return this.open ? height + 'em' : '0';
     }
   }

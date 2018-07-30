@@ -1,6 +1,6 @@
 <template lang="pug">
 ul.dotpoint--frame
-  li.dotpoint--text {{ text }}
+  li.dotpoint--text(style="backgroundImage: url('arrow.svg')") {{ text }}
 </template>
 <script>
 export default {
@@ -25,7 +25,6 @@ export default {
 .dotpoint--text {
   display: inline-block;
   content: '';
-  background-image: url(~/arrow.svg);
   background-size: 0.85em;
   background-position: left top 3px;
   background-repeat: no-repeat;
