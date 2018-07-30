@@ -35,9 +35,9 @@
 .responsive-font {
   font-size: 1rem;
   @media #{$phone--large} {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   @media #{$desktop--medium} {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 }

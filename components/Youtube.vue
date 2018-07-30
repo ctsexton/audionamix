@@ -14,14 +14,18 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+@import '~/assets/styles/_variables.scss';
 .media-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 650px;
+	width: 550px;
 	margin: 0;
 	@media screen and (min-width: 751px) {
-		width: 650px;
+		width: 550px;
+	}
+  @media #{$desktop--large} {
+		width: 550px;
 	}
 }
 .media-container iframe {
@@ -37,8 +41,8 @@ export default {
 	margin: 5px auto;
 	@media screen and (min-width: 751px) {
 		margin: 10px;
-		height: 395px;
-		width: 700px;
+		height: 327px;
+		width: 580px;
 	}
 }
 .video-ratio {

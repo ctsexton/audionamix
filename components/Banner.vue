@@ -21,6 +21,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '~/assets/styles/_variables.scss';
 .banner {
   background: linear-gradient(rgb(25,25,40), rgb(15,15,20));
   color: white;
@@ -28,7 +29,10 @@ export default {
   overflow: hidden;
 }
 .max-image {
-  max-width: 650px;
+  max-width: 400px;
+  @media #{$desktop--large} {
+    max-width: 600px;
+  }
 }
 .img-contain {
   max-width: 100%;

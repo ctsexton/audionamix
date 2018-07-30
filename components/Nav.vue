@@ -50,8 +50,8 @@ $bar-background: #222;
 
 .logo {
   overflow: hidden;
-  min-width: 200px;
-  width: 12vw;
+  min-width: 150px;
+  width: 10vw;
   max-width: 250px;
   padding: 10px 0;
 }

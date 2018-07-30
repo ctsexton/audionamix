@@ -1,9 +1,9 @@
 <template lang="pug">
 .video.responsive-font
-  .pair.flex.reverse
+  .pair.reverse
     Youtube(:source="video" :width="720" :height="405")
     .copy
-      h1.title {{ title }}
+      .title {{ title }}
       .summary(v-for="dotPoint in summary")
         DotPoint(:image="'arrow.svg'" :text="dotPoint")
       .flex.horizontal-align.audio-sample
@@ -28,8 +28,11 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/styles/_variables.scss';
 .video {
-  padding: 2em;
+  padding: 1em;
   width: 100%;
+  @media #{$desktop--large} {
+    padding: 2em;
+  }
 }
 .title {
   text-align: left;
@@ -38,17 +41,19 @@ export default {
 }
 .reverse {
   flex-flow: row-reverse wrap;
+  align-items: top;
 }
 .copy {
   width: 100%;
-  padding: 0 1em;
+  padding: 1em 0.5em 0;
   font-size: 0.9em;
-  max-width: 700px;
+  max-width: 450px;
   @media #{$desktop--large} {
-    max-width: 600px;
+    max-width: 450px;
   }
   @media #{$desktop--huge} {
-    max-width: 650px;
+    max-width: 570px;
+    padding: 1em 0.5em 0;
   }
 }
 .audio-sample {
