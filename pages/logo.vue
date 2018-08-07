@@ -3,10 +3,10 @@
 	.top Vector graphics logo demo - same file retains sharpness at multiple sizes, reducing need to produce multiple graphic assets for different mediums.
 	.logo
 		h2 Small:
-		img(:src="contents.navigation.logo" width="150px")
+		img(:src="'logo_display.svg'" width="150px")
 	.logo
 		h2 Medium:
-		img(:src="contents.navigation.logo" width="300px")
+		img(:src="'logo_display.svg'" width="300px")
 	.logo
 		h2 Large:
 		img(:src="contents.navigation.logo" width="450px")
